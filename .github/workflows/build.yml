@@ -1,26 +1,31 @@
-#Workflow name
-name: CI/CD Pipeline
-on:
-  workflow_dispatch:
+  name: CI/CD Pipeline
+  on:
+    workflow_dispatch:
     push:
-        branches:
+      branches:
         - main
 
-jobs:
-  tests:
-    name: Unit Tests
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: Set up JDK
-        uses: actions/setup-java@v1
-        with:
+  jobs:
+    tests:
+      name: Unit Tests
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+
+        - name: Set up JDK
+          uses: actions/setup-java@v4
+          with:
+            distribution: temurin
             java-version: '11'
-      - name: Build Maven package
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
+
+        - name: Cache Maven repository
+          uses: actions/cache@v3
+          with:
+            path: ~/.m2/repository
             key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-            restore-keys: ${{ runner.os }}-m2
-      - name: Run tests
-        run: mvn -B test
+            restore-keys: |
+              ${{ runner.os }}-m2-
+
+        - name: Run tests
+          run: mvn -B test
