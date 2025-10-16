@@ -26,9 +26,17 @@
 		<tag/>
 		<url/>
 	</scm>
-	<properties>
-		<java.version>11</java.version>
-	</properties>
+    <properties>
+
+        <java.version>11</java.version>
+
+        <sonar.projectKey>JuanSebastian05_Lab2-ArquiSoft2025-prueba</sonar.projectKey>
+
+        <sonar.organization>juansebastian05-1</sonar.organization>
+
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
+    </properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
