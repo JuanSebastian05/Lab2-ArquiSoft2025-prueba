@@ -1,4 +1,8 @@
 [![CI/CD Pipeline](https://github.com/JuanSebastian05/Lab2-ArquiSoft2025-prueba/actions/workflows/build.yml/badge.svg)](https://github.com/JuanSebastian05/Lab2-ArquiSoft2025-prueba/actions/workflows/build.yml)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=JuanSebastian05_Lab2-ArquiSoft2025-prueba)](https://sonarcloud.io/summary/new_code?id=JuanSebastian05_Lab2-ArquiSoft2025-prueba)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=JuanSebastian05_Lab2-ArquiSoft2025-prueba&metric=coverage)](https://sonarcloud.io/summary/new_code?id=JuanSebastian05_Lab2-ArquiSoft2025-prueba)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=JuanSebastian05_Lab2-ArquiSoft2025-prueba&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=JuanSebastian05_Lab2-ArquiSoft2025-prueba)
+
 
 # Lab2\-ArquiSoft2025\-prueba
 
