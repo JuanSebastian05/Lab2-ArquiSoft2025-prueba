@@ -103,7 +103,7 @@
             #Set artifact name
             name: artifact
             #From this path
-            path: target/lab2Prueba.jar
+            path: target/lab2prueba.jar
 
         - name: Build & push Docker image
           uses: mr-smithers-excellent/docker-build-push@v6

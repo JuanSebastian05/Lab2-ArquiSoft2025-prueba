@@ -78,6 +78,6 @@
                 </executions>
             </plugin>
 		</plugins>
-        <finalName>lab2Prueba</finalName>
+        <finalName>lab2prueba</finalName>
 	</build>
 </project>
