@@ -108,7 +108,7 @@
         - name: Build & push Docker image
           uses: mr-smithers-excellent/docker-build-push@v6
           with:
-            image: juansn/lab2Prueba
+            image: juansn/lab2prueba
             tags: latest
             registry: docker.io
             dockerfile: Dockerfile
