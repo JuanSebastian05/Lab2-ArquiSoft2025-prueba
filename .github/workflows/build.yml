@@ -103,4 +103,14 @@
             #Set artifact name
             name: artifact
             #From this path
-            path: target/faker-0.0.1-SNAPSHOT.jar
+            path: target/lab2Prueba.jar
+
+        - name: Build & push Docker image
+          uses: mr-smithers-excellent/docker-build-push@v6
+          with:
+            image: juansn/lab2Prueba
+            tags: latest
+            registry: docker.io
+            dockerfile: Dockerfile
+            username: ${{ secrets.DOCKER_USERNAME }}
+            password: ${{ secrets.DOCKER_PASSWORD }}
